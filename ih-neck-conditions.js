@@ -83,6 +83,8 @@ class IhNeckConditions extends HTMLElement {
           box-shadow: 0 4px 20px rgba(255, 98, 24, 0.08);
         }
 
+        .condition-card.hidden { display: none; }
+
         .card-number {
           font-size: 11px;
           font-weight: 700;
@@ -108,12 +110,27 @@ class IhNeckConditions extends HTMLElement {
           line-height: 1.6;
         }
 
+        .grid-wrapper { position: relative; }
+
+        .grid-fade {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 70px;
+          background: linear-gradient(to bottom, transparent, #f5f4f0);
+          pointer-events: none;
+          transition: opacity 0.3s ease;
+        }
+
+        .grid-fade.hidden { opacity: 0; }
+
         .scroll-hint {
           display: flex;
           justify-content: center;
           gap: 6px;
           margin-top: 12px;
-          margin-bottom: 8px;
+          margin-bottom: 20px;
         }
 
         .scroll-dot {
@@ -128,6 +145,30 @@ class IhNeckConditions extends HTMLElement {
           border-radius: 3px;
           background: #ff6218;
         }
+
+        .load-more-wrap { text-align: center; }
+
+        .load-more-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: none;
+          border: 1.5px solid #ff6218;
+          color: #ff6218;
+          font-family: 'Inter', sans-serif;
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
+          padding: 14px 32px;
+          border-radius: 2px;
+          cursor: pointer;
+          transition: background 0.2s ease, color 0.2s ease;
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        .load-more-btn:hover { background: #ff6218; color: #fff; }
+        .load-more-btn.hidden { display: none; }
 
         @media (min-width: 560px) {
           .scroll-outer {
@@ -150,6 +191,9 @@ class IhNeckConditions extends HTMLElement {
             padding: 26px 22px;
           }
 
+          .condition-card.hidden { display: block; }
+          .load-more-wrap { display: none; }
+          .grid-fade { display: none; }
           .scroll-hint { display: none; }
         }
 
@@ -177,58 +221,61 @@ class IhNeckConditions extends HTMLElement {
           Our neck physiotherapists are trained to diagnose and treat the full range of neck injuries and conditions, from everyday sprains and strains to complex disc, nerve and postural cases.
         </p>
 
-        <div class="scroll-outer">
-          <div class="conditions-grid">
+        <div class="grid-wrapper">
+          <div class="scroll-outer">
+            <div class="conditions-grid">
 
-            <div class="condition-card">
-              <p class="card-number">01</p>
-              <h3 class="card-title">Wry Neck Treatment</h3>
-              <p class="card-body">Hands-on wry neck treatment to relieve sudden-onset pain and stiffness, restore range of motion and resolve the muscle spasm causing the head to tilt to one side.</p>
+              <div class="condition-card">
+                <p class="card-number">01</p>
+                <h3 class="card-title">Wry Neck Treatment</h3>
+                <p class="card-body">Hands-on wry neck treatment to relieve sudden-onset pain and stiffness, restore range of motion and resolve the muscle spasm causing the head to tilt to one side.</p>
+              </div>
+
+              <div class="condition-card">
+                <p class="card-number">02</p>
+                <h3 class="card-title">Tech Neck Treatment</h3>
+                <p class="card-body">Assessment and tech neck treatment for postural neck pain caused by prolonged screen use and forward head posture, with exercises to correct alignment and reduce recurring strain.</p>
+              </div>
+
+              <div class="condition-card">
+                <p class="card-number">03</p>
+                <h3 class="card-title">Physio for Whiplash</h3>
+                <p class="card-body">Physio for whiplash following motor vehicle accidents, sports injuries or falls, to reduce pain, restore movement and prevent long-term stiffness and referred arm symptoms.</p>
+              </div>
+
+              <div class="condition-card">
+                <p class="card-number">04</p>
+                <h3 class="card-title">Cervical Radiculopathy</h3>
+                <p class="card-body">Cervical radiculopathy physio to relieve nerve root compression causing pain, pins and needles, or weakness radiating into the arms, hands or fingers.</p>
+              </div>
+
+              <div class="condition-card">
+                <p class="card-number">05</p>
+                <h3 class="card-title">Neck Sprain and Strain</h3>
+                <p class="card-body">Manual therapy and targeted rehabilitation for neck sprains and strains caused by poor posture, sudden movements, sports activity or workplace injury.</p>
+              </div>
+
+              <div class="condition-card">
+                <p class="card-number">06</p>
+                <h3 class="card-title">Cervical Disc Injury</h3>
+                <p class="card-body">Evidence-based treatment for cervical bulging and herniated discs compressing spinal nerves and causing localised neck pain or referred pain into the arms.</p>
+              </div>
+
+              <div class="condition-card hidden">
+                <p class="card-number">07</p>
+                <h3 class="card-title">Cervicogenic Headaches</h3>
+                <p class="card-body">Physiotherapy for headaches originating from the cervical spine, addressing the underlying joint and muscle dysfunction that drives recurring head pain.</p>
+              </div>
+
+              <div class="condition-card hidden">
+                <p class="card-number">08</p>
+                <h3 class="card-title">Cervical Spondylosis</h3>
+                <p class="card-body">Conservative management of age-related cervical joint degeneration to reduce stiffness, nerve irritation and improve long-term neck mobility and function.</p>
+              </div>
+
             </div>
-
-            <div class="condition-card">
-              <p class="card-number">02</p>
-              <h3 class="card-title">Tech Neck Treatment</h3>
-              <p class="card-body">Assessment and tech neck treatment for postural neck pain caused by prolonged screen use and forward head posture, with exercises to correct alignment and reduce recurring strain.</p>
-            </div>
-
-            <div class="condition-card">
-              <p class="card-number">03</p>
-              <h3 class="card-title">Physio for Whiplash</h3>
-              <p class="card-body">Physio for whiplash following motor vehicle accidents, sports injuries or falls, to reduce pain, restore movement and prevent long-term stiffness and referred arm symptoms.</p>
-            </div>
-
-            <div class="condition-card">
-              <p class="card-number">04</p>
-              <h3 class="card-title">Cervical Radiculopathy</h3>
-              <p class="card-body">Cervical radiculopathy physio to relieve nerve root compression causing pain, pins and needles, or weakness radiating into the arms, hands or fingers.</p>
-            </div>
-
-            <div class="condition-card">
-              <p class="card-number">05</p>
-              <h3 class="card-title">Neck Sprain and Strain</h3>
-              <p class="card-body">Manual therapy and targeted rehabilitation for neck sprains and strains caused by poor posture, sudden movements, sports activity or workplace injury.</p>
-            </div>
-
-            <div class="condition-card">
-              <p class="card-number">06</p>
-              <h3 class="card-title">Cervical Disc Injury</h3>
-              <p class="card-body">Evidence-based treatment for cervical bulging and herniated discs compressing spinal nerves and causing localised neck pain or referred pain into the arms.</p>
-            </div>
-
-            <div class="condition-card">
-              <p class="card-number">07</p>
-              <h3 class="card-title">Cervicogenic Headaches</h3>
-              <p class="card-body">Physiotherapy for headaches originating from the cervical spine, addressing the underlying joint and muscle dysfunction that drives recurring head pain.</p>
-            </div>
-
-            <div class="condition-card">
-              <p class="card-number">08</p>
-              <h3 class="card-title">Cervical Spondylosis</h3>
-              <p class="card-body">Conservative management of age-related cervical joint degeneration to reduce stiffness, nerve irritation and improve long-term neck mobility and function.</p>
-            </div>
-
           </div>
+          <div class="grid-fade" id="gridFade"></div>
         </div>
 
         <div class="scroll-hint">
@@ -237,8 +284,20 @@ class IhNeckConditions extends HTMLElement {
           <div class="scroll-dot"></div>
         </div>
 
+        <div class="load-more-wrap">
+          <button class="load-more-btn" id="loadMoreBtn">Show More Conditions +</button>
+        </div>
+
       </div>
     `;
+
+    shadow.getElementById('loadMoreBtn').addEventListener('click', function () {
+      shadow.querySelectorAll('.condition-card.hidden').forEach(card => {
+        card.classList.remove('hidden');
+      });
+      shadow.getElementById('gridFade').classList.add('hidden');
+      this.classList.add('hidden');
+    });
   }
 }
 
