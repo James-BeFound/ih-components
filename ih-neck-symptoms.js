@@ -307,7 +307,7 @@ class IhNeckSymptoms extends HTMLElement {
 
         <div class="cta-block">
           <p class="cta-text">Not sure which category you fall into? Book an assessment and let our neck physios work it out for you.</p>
-          <button class="cta-btn" onclick="this.dispatchEvent(new CustomEvent('navigate', { detail: { url: 'https://app.halth.com/booking/73fa5497-c5be-47d5-b4f9-f8d512431346' }, bubbles: true })); '*')">Book Now →</button>
+          <button class="cta-btn" onclick="this.dispatchEvent(new CustomEvent('navigate', { detail: { url: 'https://app.halth.com/booking/73fa5497-c5be-47d5-b4f9-f8d512431346' }, bubbles: true }))">Book Now →</button>
         </div>
 
       </div>
