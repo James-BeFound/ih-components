@@ -289,7 +289,7 @@ class IhNeckFaq extends HTMLElement {
 
     // CTA button
     shadow.getElementById('ctaBtn').addEventListener('click', () => {
-      window.parent.postMessage({ url: 'https://app.halth.com/booking/73fa5497-c5be-47d5-b4f9-f8d512431346' }, '*');
+      this.dispatchEvent(new CustomEvent('navigate', { detail: { url: 'https://app.halth.com/booking/73fa5497-c5be-47d5-b4f9-f8d512431346' }, bubbles: true }));
     });
 
     // Accordion
