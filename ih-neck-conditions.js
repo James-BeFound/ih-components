@@ -170,6 +170,12 @@ class IhNeckConditions extends HTMLElement {
         .load-more-btn:hover { background: #ff6218; color: #fff; }
         .load-more-btn.hidden { display: none; }
 
+        @media (max-width: 559px) {
+          .condition-card.hidden { display: block; }
+          .load-more-wrap { display: none; }
+          .grid-fade { display: none; }
+        }
+
         @media (min-width: 560px) {
           .scroll-outer {
             overflow-x: visible;
@@ -191,9 +197,9 @@ class IhNeckConditions extends HTMLElement {
             padding: 26px 22px;
           }
 
-          .condition-card.hidden { display: block; }
-          .load-more-wrap { display: none; }
-          .grid-fade { display: none; }
+          .condition-card.hidden { display: none; }
+          .load-more-wrap { display: block; }
+          .grid-fade { display: block; }
           .scroll-hint { display: none; }
         }
 
