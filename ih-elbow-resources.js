@@ -90,6 +90,10 @@ class IhElbowResources extends HTMLElement {
           flex-direction: column;
         }
 
+        .article-card {
+          cursor: pointer;
+        }
+
         .article-card:hover {
           box-shadow: 0 8px 28px rgba(255, 98, 24, 0.1);
           transform: translateY(-2px);
@@ -325,9 +329,10 @@ class IhElbowResources extends HTMLElement {
       </div>
     `;
 
-    // Wire up all read-link buttons
-    shadow.querySelectorAll('.read-link').forEach(btn => {
-      btn.addEventListener('click', () => {
+    // Wire up entire cards as clickable
+    shadow.querySelectorAll('.article-card').forEach(card => {
+      const btn = card.querySelector('.read-link');
+      card.addEventListener('click', () => {
         this.dispatchEvent(new CustomEvent('navigate', {
           detail: { url: btn.dataset.url },
           bubbles: true
