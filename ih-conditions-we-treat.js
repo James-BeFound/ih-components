@@ -549,6 +549,38 @@ class IhConditionsWeTreat extends HTMLElement {
         }
       });
     });
+
+    , '*');
+      }
+    
+      
+      const carousel  = shadow.getElementById('carousel');
+      const arrowPrev = shadow.getElementById('arrowPrev');
+      const arrowNext = shadow.getElementById('arrowNext');
+    
+      function cardStep() {
+        const card = carousel.querySelector('.category-card');
+        const gap  = parseFloat(getComputedStyle(carousel).gap) || 14;
+        return card ? card.offsetWidth + gap : 260;
+      }
+    
+      function updateArrows() {
+        const atStart = carousel.scrollLeft < 10;
+        const atEnd = carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 10;
+        arrowPrev.classList.toggle('hidden', atStart);
+        arrowNext.classList.toggle('hidden', atEnd);
+      }
+    
+      arrowNext.addEventListener('click', () => {
+        carousel.scrollBy({ left: cardStep(), behavior: 'smooth' });
+      });
+    
+      arrowPrev.addEventListener('click', () => {
+        carousel.scrollBy({ left: -cardStep(), behavior: 'smooth' });
+      });
+    
+      carousel.addEventListener('scroll', updateArrows);
+      updateArrows();
   }
 }
 
