@@ -550,11 +550,7 @@ class IhConditionsWeTreat extends HTMLElement {
       });
     });
 
-    , '*');
-      }
-    
-      
-      const carousel  = shadow.getElementById('carousel');
+    const carousel  = shadow.getElementById('carousel');
       const arrowPrev = shadow.getElementById('arrowPrev');
       const arrowNext = shadow.getElementById('arrowNext');
     
