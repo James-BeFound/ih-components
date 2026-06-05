@@ -277,6 +277,25 @@ class IhHowItWorks extends HTMLElement {
       </div>
       </div>
     `;
+
+    const row        = shadow.getElementById('stepsRow');
+      const fadeRight  = shadow.getElementById('fadeRight');
+      const arrowRight = shadow.getElementById('arrowRight');
+    
+      function cardStep() {
+        const step = row.querySelector('.step');
+        const gap  = parseFloat(getComputedStyle(row).gap) || 14;
+        return step ? step.offsetWidth + gap : 214;
+      }
+    
+      arrowRight.addEventListener('click', () => {
+        row.scrollBy({ left: cardStep(), behavior: 'smooth' });
+      });
+    
+      row.addEventListener('touchstart', () => {
+        arrowRight.classList.add('hidden');
+        fadeRight.classList.add('hidden');
+      }, { passive: true, once: true });
   }
 }
 
