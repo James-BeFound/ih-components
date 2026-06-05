@@ -355,6 +355,50 @@ class IhPhysiotherapyServices extends HTMLElement {
         }
       });
     });
+
+    , '*');
+      }
+    
+      
+      const track   = shadow.getElementById('carouselTrack');
+      const counter = shadow.getElementById('navCounter');
+      const prevBtn = shadow.getElementById('navPrev');
+      const nextBtn = shadow.getElementById('navNext');
+      const fadeEl  = shadow.getElementById('fadeRight');
+      const TOTAL   = 10;
+    
+      function cardStep() {
+        const card = track.querySelector('.service-card');
+        const gap  = parseFloat(getComputedStyle(track).gap) || 16;
+        return card ? card.offsetWidth + gap : 276;
+      }
+    
+      function currentIndex() {
+        return Math.round(track.scrollLeft / cardStep());
+      }
+    
+      function updateState() {
+        const idx    = currentIndex();
+        const atEnd  = track.scrollLeft + track.clientWidth >= track.scrollWidth - 6;
+        const atStart = track.scrollLeft <= 6;
+    
+        counter.textContent  = `${idx + 1} / ${TOTAL}`;
+        prevBtn.disabled     = atStart;
+        nextBtn.disabled     = atEnd;
+        fadeEl.style.opacity = atEnd ? '0' : '1';
+      }
+    
+      nextBtn.addEventListener('click', () => {
+        track.scrollBy({ left: cardStep(), behavior: 'smooth' });
+      });
+    
+      prevBtn.addEventListener('click', () => {
+        track.scrollBy({ left: -cardStep(), behavior: 'smooth' });
+      });
+    
+      track.addEventListener('scroll', updateState, { passive: true });
+      window.addEventListener('resize', updateState);
+      updateState();
   }
 }
 
