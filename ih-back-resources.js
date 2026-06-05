@@ -295,6 +295,8 @@ class IhBackResources extends HTMLElement {
           @media (min-width: 900px) {
             .articles-grid { grid-template-columns: repeat(3, 1fr); }
           }
+
+          button { outline: none; }
       </style>
 
       <div class="resources-wrap">
