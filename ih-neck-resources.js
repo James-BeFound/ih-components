@@ -88,6 +88,7 @@ class IhNeckResources extends HTMLElement {
           transition: box-shadow 0.25s, transform 0.25s, border-color 0.25s;
           display: flex;
           flex-direction: column;
+          cursor: pointer;
         }
 
         .article-card:hover {
@@ -313,35 +314,35 @@ class IhNeckResources extends HTMLElement {
         <div class="scroll-outer" id="scrollOuter">
           <div class="articles-grid" id="articlesGrid">
 
-            <div class="article-card">
+            <div class="article-card" data-url="/text-neck-poke-neck">
               <div class="article-image"><img src="https://static.wixstatic.com/media/67ec1c_7f84c965686749ee8243241d4f7c32a9~mv2.jpg/v1/fill/w_420,h_220,al_c,q_85,enc_avif,quality_auto/ShoulderNeckReferredPain.jpg" alt="Tech Neck Exercises"></div>
               <div class="article-body">
                 <span class="article-tag">Exercise Guide</span>
                 <h3 class="article-title">Tech Neck Exercises: Fix Your Posture and Relieve Pain</h3>
                 <p class="article-excerpt">What text neck is, why it causes pain, and the physio-recommended exercises to correct forward head posture and relieve symptoms.</p>
                 <div class="article-meta">
-                  <div class="author"><div class="author-avatar"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" fill="#d1d5db"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#d1d5db" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="author-info"><span class="author-name">Infinite Health Team</span><span class="author-date">Infinite Health</span></div></div>
+                  <div class="author"><div class="author-avatar"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" fill="#d1d5db"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#d1d5db" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="author-info"><span class="author-name">Infinite Health Team</span><span class="author-date"></span></div></div>
                   <span class="read-time">⏱ 5 min</span>
                 </div>
-                <button class="read-link" onclick="navigate('/text-neck-poke-neck')">Read Article →</button>
+                <button class="read-link">Read Article →</button>
               </div>
             </div>
 
-            <div class="article-card">
+            <div class="article-card" data-url="/single-post/how-to-relieve-neck-pain-from-sleeping">
               <div class="article-image"><img src="https://static.wixstatic.com/media/c1fc43_765617ff745d405582be3e8afa7ab9c0~mv2.png/v1/fill/w_420,h_220,al_c,q_85,enc_avif,quality_auto/neck-sleeping.png" alt="How to Relieve Neck Pain from Sleeping"></div>
               <div class="article-body">
                 <span class="article-tag">Recovery Tips</span>
                 <h3 class="article-title">How to Relieve Neck Pain from Sleeping</h3>
                 <p class="article-excerpt">Why you wake up with a stiff neck, which sleeping positions cause it, and how to relieve the pain and stop it happening again.</p>
                 <div class="article-meta">
-                  <div class="author"><div class="author-avatar"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" fill="#d1d5db"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#d1d5db" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="author-info"><span class="author-name">Infinite Health Team</span><span class="author-date">Infinite Health</span></div></div>
+                  <div class="author"><div class="author-avatar"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" fill="#d1d5db"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#d1d5db" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="author-info"><span class="author-name">Infinite Health Team</span><span class="author-date"></span></div></div>
                   <span class="read-time">⏱ 4 min</span>
                 </div>
-                <button class="read-link" onclick="navigate('/single-post/how-to-relieve-neck-pain-from-sleeping')">Read Article →</button>
+                <button class="read-link">Read Article →</button>
               </div>
             </div>
 
-            <div class="article-card">
+            <div class="article-card" data-url="/single-post/2018/03/06/neck-pain-series-part-1-acute-wry-neck">
               <div class="article-image"><img src="https://static.wixstatic.com/media/607962_82f89181a1da423a86ccaffd14096766~mv2.jpg/v1/fill/w_420,h_220,al_c,q_85,enc_avif,quality_auto/wry-neck.jpg" alt="Acute Wry Neck"></div>
               <div class="article-body">
                 <span class="article-tag">Condition Guide</span>
@@ -351,91 +352,91 @@ class IhNeckResources extends HTMLElement {
                   <div class="author"><div class="author-avatar"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" fill="#d1d5db"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#d1d5db" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="author-info"><span class="author-name">Infinite Health Team</span><span class="author-date">Mar 2018</span></div></div>
                   <span class="read-time">⏱ 5 min</span>
                 </div>
-                <button class="read-link" onclick="navigate('/single-post/2018/03/06/neck-pain-series-part-1-acute-wry-neck')">Read Article →</button>
+                <button class="read-link">Read Article →</button>
               </div>
             </div>
 
-            <div class="article-card">
+            <div class="article-card" data-url="/single-post/neck-rehab-6-exercises">
               <div class="article-image"><img src="https://static.wixstatic.com/media/607962_8e5737f116814a21840dd0de4430ca23~mv2.jpg/v1/fill/w_420,h_220,fp_0.50_0.50,q_85,enc_avif,quality_auto/neck-rehab.jpg" alt="6 Neck Rehab Exercises"></div>
               <div class="article-body">
                 <span class="article-tag">Exercise Guide</span>
                 <h3 class="article-title">6 Neck Rehab Exercises from Our Physiotherapists</h3>
                 <p class="article-excerpt">A physio-prescribed sequence of six rehabilitation exercises to restore neck and shoulder strength, mobility and reduce pain.</p>
                 <div class="article-meta">
-                  <div class="author"><div class="author-avatar"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" fill="#d1d5db"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#d1d5db" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="author-info"><span class="author-name">Infinite Health Team</span><span class="author-date">Infinite Health</span></div></div>
+                  <div class="author"><div class="author-avatar"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" fill="#d1d5db"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#d1d5db" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="author-info"><span class="author-name">Infinite Health Team</span><span class="author-date"></span></div></div>
                   <span class="read-time">⏱ 5 min</span>
                 </div>
-                <button class="read-link" onclick="navigate('/single-post/neck-rehab-6-exercises')">Read Article →</button>
+                <button class="read-link">Read Article →</button>
               </div>
             </div>
 
-            <div class="article-card">
+            <div class="article-card" data-url="/neck-shoulder-pain">
               <div class="article-image"><img src="https://static.wixstatic.com/media/67ec1c_7f84c965686749ee8243241d4f7c32a9~mv2.jpg/v1/fill/w_420,h_220,al_c,q_85,enc_avif,quality_auto/ShoulderNeckReferredPain.jpg" alt="Neck and Shoulder Pain"></div>
               <div class="article-body">
                 <span class="article-tag">Condition Guide</span>
                 <h3 class="article-title">Neck and Shoulder Pain: Causes and Treatment</h3>
                 <p class="article-excerpt">Why neck and shoulder pain so often occur together, the structures involved, and how physiotherapy addresses both in one treatment plan.</p>
                 <div class="article-meta">
-                  <div class="author"><div class="author-avatar"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" fill="#d1d5db"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#d1d5db" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="author-info"><span class="author-name">Infinite Health Team</span><span class="author-date">Infinite Health</span></div></div>
+                  <div class="author"><div class="author-avatar"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" fill="#d1d5db"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#d1d5db" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="author-info"><span class="author-name">Infinite Health Team</span><span class="author-date"></span></div></div>
                   <span class="read-time">⏱ 5 min</span>
                 </div>
-                <button class="read-link" onclick="navigate('/neck-shoulder-pain')">Read Article →</button>
+                <button class="read-link">Read Article →</button>
               </div>
             </div>
 
-            <div class="article-card">
+            <div class="article-card" data-url="/neck-pain">
               <div class="article-image"><img src="https://static.wixstatic.com/media/93f780cd9e7d41929777baeed6ccc93e.jpg/v1/fill/w_420,h_220,al_c,q_85,enc_avif,quality_auto/neck-pain.jpg" alt="Physio for Neck Pain"></div>
               <div class="article-body">
                 <span class="article-tag">Patient Guide</span>
                 <h3 class="article-title">Physio for Neck Pain: What to Expect at Infinite Health</h3>
                 <p class="article-excerpt">How physiotherapy for neck pain works, what to expect at your first appointment, and how a physio differs from a chiropractor.</p>
                 <div class="article-meta">
-                  <div class="author"><div class="author-avatar"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" fill="#d1d5db"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#d1d5db" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="author-info"><span class="author-name">Infinite Health Team</span><span class="author-date">Infinite Health</span></div></div>
+                  <div class="author"><div class="author-avatar"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" fill="#d1d5db"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#d1d5db" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="author-info"><span class="author-name">Infinite Health Team</span><span class="author-date"></span></div></div>
                   <span class="read-time">⏱ 6 min</span>
                 </div>
-                <button class="read-link" onclick="navigate('/neck-pain')">Read Article →</button>
+                <button class="read-link">Read Article →</button>
               </div>
             </div>
 
-            <div class="article-card">
+            <div class="article-card" data-url="/neck-sprain-strain">
               <div class="article-image"><img src="https://static.wixstatic.com/media/607962_9edd3397307e4f09bb0552f1c6ed8038~mv2_d_2466_1828_s_2.jpg/v1/fill/w_420,h_220,al_c,q_85,enc_avif,quality_auto/neck-sprain.jpg" alt="Neck Sprain and Strain"></div>
               <div class="article-body">
                 <span class="article-tag">Condition Guide</span>
                 <h3 class="article-title">Neck Sprain and Strain: Symptoms, Causes and Treatment</h3>
                 <p class="article-excerpt">What happens when you sprain or strain the neck, common causes including poor posture and sport, and how physiotherapy helps.</p>
                 <div class="article-meta">
-                  <div class="author"><div class="author-avatar"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" fill="#d1d5db"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#d1d5db" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="author-info"><span class="author-name">Infinite Health Team</span><span class="author-date">Infinite Health</span></div></div>
+                  <div class="author"><div class="author-avatar"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" fill="#d1d5db"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#d1d5db" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="author-info"><span class="author-name">Infinite Health Team</span><span class="author-date"></span></div></div>
                   <span class="read-time">⏱ 5 min</span>
                 </div>
-                <button class="read-link" onclick="navigate('/neck-sprain-strain')">Read Article →</button>
+                <button class="read-link">Read Article →</button>
               </div>
             </div>
 
-            <div class="article-card">
+            <div class="article-card" data-url="/cervical-bulging-disc-herniated-dis">
               <div class="article-image"><img src="https://static.wixstatic.com/media/607962_9edd3397307e4f09bb0552f1c6ed8038~mv2_d_2466_1828_s_2.jpg/v1/fill/w_420,h_220,al_c,q_85,enc_avif,quality_auto/cervical-disc.jpg" alt="Cervical Bulging Disc"></div>
               <div class="article-body">
                 <span class="article-tag">Condition Guide</span>
                 <h3 class="article-title">Cervical Bulging Disc: Symptoms, Diagnosis and Treatment</h3>
                 <p class="article-excerpt">What a bulging or herniated cervical disc is, how it causes neck and arm pain, and how physiotherapy manages recovery without surgery.</p>
                 <div class="article-meta">
-                  <div class="author"><div class="author-avatar"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" fill="#d1d5db"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#d1d5db" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="author-info"><span class="author-name">Infinite Health Team</span><span class="author-date">Infinite Health</span></div></div>
+                  <div class="author"><div class="author-avatar"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" fill="#d1d5db"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#d1d5db" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="author-info"><span class="author-name">Infinite Health Team</span><span class="author-date"></span></div></div>
                   <span class="read-time">⏱ 6 min</span>
                 </div>
-                <button class="read-link" onclick="navigate('/cervical-bulging-disc-herniated-dis')">Read Article →</button>
+                <button class="read-link">Read Article →</button>
               </div>
             </div>
 
-            <div class="article-card">
+            <div class="article-card" data-url="/single-post/tight-neck">
               <div class="article-image"><img src="https://static.wixstatic.com/media/607962_ff2b0e2d0a384f1dad4c25f7f095f0d3~mv2.jpg/v1/fill/w_420,h_220,fp_0.50_0.50,q_85,enc_avif,quality_auto/tight-neck.jpg" alt="Tight Neck"></div>
               <div class="article-body">
                 <span class="article-tag">Exercise Guide</span>
                 <h3 class="article-title">Tight Neck: Causes, Relief and Exercises to Try at Home</h3>
                 <p class="article-excerpt">Why the neck becomes chronically tight, the muscles and joints involved, and physio-recommended stretches and exercises for relief.</p>
                 <div class="article-meta">
-                  <div class="author"><div class="author-avatar"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" fill="#d1d5db"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#d1d5db" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="author-info"><span class="author-name">Infinite Health Team</span><span class="author-date">Infinite Health</span></div></div>
+                  <div class="author"><div class="author-avatar"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" fill="#d1d5db"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#d1d5db" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="author-info"><span class="author-name">Infinite Health Team</span><span class="author-date"></span></div></div>
                   <span class="read-time">⏱ 4 min</span>
                 </div>
-                <button class="read-link" onclick="navigate('/single-post/tight-neck')">Read Article →</button>
+                <button class="read-link">Read Article →</button>
               </div>
             </div>
 
@@ -462,40 +463,20 @@ class IhNeckResources extends HTMLElement {
       </div>
     `;
 
-    // Navigation via postMessage
-    const navigate = (url) => window.parent.postMessage({ url }, '*');
+    const allCards  = Array.from(shadow.querySelectorAll('.article-card'));
+    const pageBtns  = shadow.querySelectorAll('.page-btn[data-page]');
+    const prevBtn   = shadow.getElementById('prevBtn');
+    const nextBtn   = shadow.getElementById('nextBtn');
+    const pageInfo  = shadow.getElementById('pageInfo');
 
-    // Attach navigate to all read-link buttons
-    shadow.querySelectorAll('.read-link').forEach(btn => {
-      // onclick already set inline — but we expose navigate to shadow scope
-    });
-
-    // Override inline onclick to use shadow-scoped navigate
-    shadow.querySelectorAll('[onclick]').forEach(el => {
-      const onclickVal = el.getAttribute('onclick');
-      el.removeAttribute('onclick');
-      el.addEventListener('click', () => {
-        const match = onclickVal.match(/navigate\('([^']+)'\)/);
-        if (match) navigate(match[1]);
-      });
-    });
-
-    // Pagination
-    const allCards = Array.from(shadow.querySelectorAll('.article-card'));
-    const pageBtns = shadow.querySelectorAll('.page-btn[data-page]');
-    const prevBtn  = shadow.getElementById('prevBtn');
-    const nextBtn  = shadow.getElementById('nextBtn');
-    const pageInfo = shadow.getElementById('pageInfo');
-
-    const perPage = 3;
-    let currentPage = 1;
+    const perPage    = 3;
     const totalPages = Math.ceil(allCards.length / perPage);
+    let currentPage  = 1;
 
-    function showPage(page) {
+    const showPage = (page) => {
       currentPage = page;
       allCards.forEach((card, i) => {
-        const cardPage = Math.floor(i / perPage) + 1;
-        card.style.display = cardPage === page ? '' : 'none';
+        card.style.display = Math.floor(i / perPage) + 1 === page ? '' : 'none';
       });
       pageBtns.forEach(btn => {
         btn.classList.toggle('active', parseInt(btn.dataset.page) === page);
@@ -505,7 +486,19 @@ class IhNeckResources extends HTMLElement {
       const from = (page - 1) * perPage + 1;
       const to   = Math.min(page * perPage, allCards.length);
       pageInfo.textContent = `Showing ${from} to ${to} of ${allCards.length} articles`;
-    }
+    };
+
+    allCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const url = card.dataset.url;
+        if (url) {
+          this.dispatchEvent(new CustomEvent('navigate', {
+            detail: { url },
+            bubbles: true
+          }));
+        }
+      });
+    });
 
     pageBtns.forEach(btn => {
       btn.addEventListener('click', () => showPage(parseInt(btn.dataset.page)));
