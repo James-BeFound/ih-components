@@ -314,11 +314,11 @@ class IhConditionsWeTreat extends HTMLElement {
       <p class="body-text">
             Our experienced physiotherapists treat a <strong>wide range</strong> of musculoskeletal, neurological, and chronic conditions. From acute sports injuries to long-term pain management, our team is here to help.
           </p>
-      <button class="cta-btn" onclick="navigate('https://app.halth.com/booking/org_2wfUwagaVRVTSC9Ax7BQav3hbSZ')">Book an Assessment</button>
+      <button class="cta-btn" data-url="https://app.halth.com/booking/org_2wfUwagaVRVTSC9Ax7BQav3hbSZ">Book an Assessment</button>
       </div>
       <div class="col-right">
       <div class="conditions-grid">
-      <div class="category-card" onclick="navigate('/muscular-low-back-pain')">
+      <div class="category-card" data-url="/muscular-low-back-pain">
       <div class="card-header">
       <span aria-hidden="true" class="card-icon"><svg fill="none" viewbox="0 0 28 28"><path d="M14 3v22" stroke="#fff" stroke-linecap="round" stroke-width="1.7"></path><rect height="5" rx="2" stroke="#fff" stroke-width="1.5" width="10" x="9" y="6"></rect><rect height="5" rx="2" stroke="#fff" stroke-width="1.5" width="10" x="9" y="13"></rect><path d="M9 8.5H6M19 8.5h3M9 15.5H6M19 15.5h3" stroke="#fff" stroke-linecap="round" stroke-width="1.5"></path></svg></span>
       <span class="card-title">Spine &amp; Back</span>
@@ -332,7 +332,7 @@ class IhConditionsWeTreat extends HTMLElement {
       </ul>
       </div>
       </div>
-      <div class="category-card" onclick="navigate('/shoulder-pain')">
+      <div class="category-card" data-url="/shoulder-pain">
       <div class="card-header">
       <span aria-hidden="true" class="card-icon"><svg fill="none" viewbox="0 0 28 28"><circle cx="14" cy="9" r="4" stroke="#fff" stroke-width="1.7"></circle><path d="M6 24c0-5 3.6-8 8-8s8 3 8 8" stroke="#fff" stroke-linecap="round" stroke-width="1.7"></path><path d="M19 13l4 2" stroke="#fff" stroke-linecap="round" stroke-width="1.7"></path></svg></span>
       <span class="card-title">Shoulder &amp; Neck</span>
@@ -346,7 +346,7 @@ class IhConditionsWeTreat extends HTMLElement {
       </ul>
       </div>
       </div>
-      <div class="category-card" onclick="navigate('/sport-physiotherapist')">
+      <div class="category-card" data-url="/sport-physiotherapist">
       <div class="card-header">
       <span aria-hidden="true" class="card-icon"><svg fill="none" viewbox="0 0 28 28"><path d="M14 3l2.5 6.5h7L18 14l2.5 7L14 18l-6.5 3L10 14 4.5 9.5h7L14 3z" stroke="#fff" stroke-linejoin="round" stroke-width="1.6"></path></svg></span>
       <span class="card-title">Sports Injuries</span>
@@ -360,7 +360,7 @@ class IhConditionsWeTreat extends HTMLElement {
       </ul>
       </div>
       </div>
-      <div class="category-card" onclick="navigate('/knee-pain-injury')">
+      <div class="category-card" data-url="/knee-pain-injury">
       <div class="card-header">
       <span aria-hidden="true" class="card-icon"><svg fill="none" viewbox="0 0 28 28"><path d="M14 4c-2.5 0-4.5 2-4.5 4.5v7.5L7 23h5l2-4 2 4h5l-2.5-7V8.5C18.5 6 16.5 4 14 4z" stroke="#fff" stroke-linejoin="round" stroke-width="1.6"></path></svg></span>
       <span class="card-title">Lower Limb</span>
@@ -374,7 +374,7 @@ class IhConditionsWeTreat extends HTMLElement {
       </ul>
       </div>
       </div>
-      <div class="category-card" onclick="navigate('/neck-pain')">
+      <div class="category-card" data-url="/neck-pain">
       <div class="card-header">
       <span aria-hidden="true" class="card-icon"><svg fill="none" viewbox="0 0 28 28"><circle cx="14" cy="11" r="7" stroke="#fff" stroke-width="1.7"></circle><path d="M14 18v6M10 24h8" stroke="#fff" stroke-linecap="round" stroke-width="1.7"></path><path d="M11 9.5c0-1.7 1.3-3 3-3" stroke="#fff" stroke-linecap="round" stroke-width="1.5"></path></svg></span>
       <span class="card-title">Head &amp; Jaw</span>
@@ -388,7 +388,7 @@ class IhConditionsWeTreat extends HTMLElement {
       </ul>
       </div>
       </div>
-      <div class="category-card" onclick="navigate('/osteoporosis')">
+      <div class="category-card" data-url="/osteoporosis">
       <div class="card-header">
       <span aria-hidden="true" class="card-icon"><svg fill="none" viewbox="0 0 28 28"><path d="M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9" stroke="#fff" stroke-linecap="round" stroke-width="1.7"></path><path d="M19 3l5 2-2 5" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path><path d="M11 14l2.5 2.5 4-4" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg></span>
       <span class="card-title">Chronic &amp; Other</span>
@@ -410,7 +410,7 @@ class IhConditionsWeTreat extends HTMLElement {
       <strong>Not sure if we treat your condition?</strong>
       <p>Our physios manage 50+ musculoskeletal and neurological conditions, call us to find out.</p>
       </div>
-      <button class="banner-btn" onclick="navigate('https://app.halth.com/booking/org_2wfUwagaVRVTSC9Ax7BQav3hbSZ')">Contact Us →</button>
+      <button class="banner-btn" data-url="https://app.halth.com/booking/org_2wfUwagaVRVTSC9Ax7BQav3hbSZ">Contact Us →</button>
       </div>
       </div>
       </div>
@@ -429,11 +429,11 @@ class IhConditionsWeTreat extends HTMLElement {
       <p class="body-text">
             Our experienced physiotherapists treat a <strong>wide range</strong> of musculoskeletal, neurological, and chronic conditions. From acute sports injuries to long-term pain management, our team is here to help.
           </p>
-      <button class="cta-btn" onclick="navigate('https://app.halth.com/booking/org_2wfUwagaVRVTSC9Ax7BQav3hbSZ')">Book an Assessment</button>
+      <button class="cta-btn" data-url="https://app.halth.com/booking/org_2wfUwagaVRVTSC9Ax7BQav3hbSZ">Book an Assessment</button>
       </div>
       <div class="carousel-section">
       <div class="carousel" id="carousel">
-      <div class="category-card" onclick="navigate('/muscular-low-back-pain')">
+      <div class="category-card" data-url="/muscular-low-back-pain">
       <div class="card-header">
       <span aria-hidden="true" class="card-icon"><svg fill="none" viewbox="0 0 28 28"><path d="M14 3v22" stroke="#fff" stroke-linecap="round" stroke-width="1.7"></path><rect height="5" rx="2" stroke="#fff" stroke-width="1.5" width="10" x="9" y="6"></rect><rect height="5" rx="2" stroke="#fff" stroke-width="1.5" width="10" x="9" y="13"></rect><path d="M9 8.5H6M19 8.5h3M9 15.5H6M19 15.5h3" stroke="#fff" stroke-linecap="round" stroke-width="1.5"></path></svg></span>
       <span class="card-title">Spine &amp; Back</span>
@@ -447,7 +447,7 @@ class IhConditionsWeTreat extends HTMLElement {
       </ul>
       </div>
       </div>
-      <div class="category-card" onclick="navigate('/shoulder-pain')">
+      <div class="category-card" data-url="/shoulder-pain">
       <div class="card-header">
       <span aria-hidden="true" class="card-icon"><svg fill="none" viewbox="0 0 28 28"><circle cx="14" cy="9" r="4" stroke="#fff" stroke-width="1.7"></circle><path d="M6 24c0-5 3.6-8 8-8s8 3 8 8" stroke="#fff" stroke-linecap="round" stroke-width="1.7"></path><path d="M19 13l4 2" stroke="#fff" stroke-linecap="round" stroke-width="1.7"></path></svg></span>
       <span class="card-title">Shoulder &amp; Neck</span>
@@ -461,7 +461,7 @@ class IhConditionsWeTreat extends HTMLElement {
       </ul>
       </div>
       </div>
-      <div class="category-card" onclick="navigate('/sport-physiotherapist')">
+      <div class="category-card" data-url="/sport-physiotherapist">
       <div class="card-header">
       <span aria-hidden="true" class="card-icon"><svg fill="none" viewbox="0 0 28 28"><path d="M14 3l2.5 6.5h7L18 14l2.5 7L14 18l-6.5 3L10 14 4.5 9.5h7L14 3z" stroke="#fff" stroke-linejoin="round" stroke-width="1.6"></path></svg></span>
       <span class="card-title">Sports Injuries</span>
@@ -475,7 +475,7 @@ class IhConditionsWeTreat extends HTMLElement {
       </ul>
       </div>
       </div>
-      <div class="category-card" onclick="navigate('/knee-pain-injury')">
+      <div class="category-card" data-url="/knee-pain-injury">
       <div class="card-header">
       <span aria-hidden="true" class="card-icon"><svg fill="none" viewbox="0 0 28 28"><path d="M14 4c-2.5 0-4.5 2-4.5 4.5v7.5L7 23h5l2-4 2 4h5l-2.5-7V8.5C18.5 6 16.5 4 14 4z" stroke="#fff" stroke-linejoin="round" stroke-width="1.6"></path></svg></span>
       <span class="card-title">Lower Limb</span>
@@ -489,7 +489,7 @@ class IhConditionsWeTreat extends HTMLElement {
       </ul>
       </div>
       </div>
-      <div class="category-card" onclick="navigate('/neck-pain')">
+      <div class="category-card" data-url="/neck-pain">
       <div class="card-header">
       <span aria-hidden="true" class="card-icon"><svg fill="none" viewbox="0 0 28 28"><circle cx="14" cy="11" r="7" stroke="#fff" stroke-width="1.7"></circle><path d="M14 18v6M10 24h8" stroke="#fff" stroke-linecap="round" stroke-width="1.7"></path><path d="M11 9.5c0-1.7 1.3-3 3-3" stroke="#fff" stroke-linecap="round" stroke-width="1.5"></path></svg></span>
       <span class="card-title">Head &amp; Jaw</span>
@@ -503,7 +503,7 @@ class IhConditionsWeTreat extends HTMLElement {
       </ul>
       </div>
       </div>
-      <div class="category-card" onclick="navigate('/osteoporosis')">
+      <div class="category-card" data-url="/osteoporosis">
       <div class="card-header">
       <span aria-hidden="true" class="card-icon"><svg fill="none" viewbox="0 0 28 28"><path d="M14 5c-5 0-9 4-9 9s4 9 9 9 9-4 9-9" stroke="#fff" stroke-linecap="round" stroke-width="1.7"></path><path d="M19 3l5 2-2 5" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path><path d="M11 14l2.5 2.5 4-4" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg></span>
       <span class="card-title">Chronic &amp; Other</span>
@@ -531,11 +531,24 @@ class IhConditionsWeTreat extends HTMLElement {
       <strong>Not sure if we treat your condition?</strong>
       <p>Our physios manage 50+ musculoskeletal and neurological conditions, call us to find out.</p>
       </div>
-      <button class="banner-btn" onclick="navigate('https://app.halth.com/booking/org_2wfUwagaVRVTSC9Ax7BQav3hbSZ')">Contact Us →</button>
+      <button class="banner-btn" data-url="https://app.halth.com/booking/org_2wfUwagaVRVTSC9Ax7BQav3hbSZ">Contact Us →</button>
       </div>
       </div>
       </div>
     `;
+
+    shadow.querySelectorAll('[data-url]:not(.article-card)').forEach(el => {
+      el.style.cursor = 'pointer';
+      el.addEventListener('click', () => {
+        const url = el.dataset.url;
+        if (url) {
+          this.dispatchEvent(new CustomEvent('navigate', {
+            detail: { url },
+            bubbles: true
+          }));
+        }
+      });
+    });
   }
 }
 
