@@ -218,7 +218,7 @@ class IhPhysiotherapyServices extends HTMLElement {
       <div class="carousel-outer">
       <div class="carousel-track" id="carouselTrack">
 
-      <div class="service-card" onclick="navigate('/remedial-massage-therapy')">
+      <div class="service-card" data-url="/remedial-massage-therapy">
       <svg aria-hidden="true" class="card-icon" fill="none" viewbox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
       <path d="M7 19c0-2.8 2-5 5-5h5c2.2 0 4 1.7 4 4v2c0 2.8-2.2 5-5 5h-4c-2.8 0-5-2.2-5-5v-1z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path>
       <path d="M12 14v-4a2 2 0 0 1 4 0v4" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path>
@@ -230,7 +230,7 @@ class IhPhysiotherapyServices extends HTMLElement {
       <div class="card-cta">Learn More →</div>
       </div>
 
-      <div class="service-card" onclick="navigate('/sport-physiotherapist')">
+      <div class="service-card" data-url="/sport-physiotherapist">
       <svg aria-hidden="true" class="card-icon" fill="none" viewbox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
       <circle cx="17" cy="9" r="3.5" stroke="currentColor" stroke-width="1.7"></circle>
       <path d="M7 22h5l2-5 4 8 3-6 3 3h3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path>
@@ -240,7 +240,7 @@ class IhPhysiotherapyServices extends HTMLElement {
       <div class="card-cta">Learn More →</div>
       </div>
 
-      <div class="service-card" onclick="navigate('/dry-needling')">
+      <div class="service-card" data-url="/dry-needling">
       <svg aria-hidden="true" class="card-icon" fill="none" viewbox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
       <line stroke="currentColor" stroke-linecap="round" stroke-width="2" x1="17" x2="17" y1="5" y2="29"></line>
       <path d="M14 7.5L17 4l3 3.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path>
@@ -251,7 +251,7 @@ class IhPhysiotherapyServices extends HTMLElement {
       <div class="card-cta">Learn More →</div>
       </div>
 
-      <div class="service-card" onclick="navigate('/shockwave-therapy')">
+      <div class="service-card" data-url="/shockwave-therapy">
       <svg aria-hidden="true" class="card-icon" fill="none" viewbox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
       <path d="M19 5L12 19h8L14 30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
       </svg>
@@ -260,7 +260,7 @@ class IhPhysiotherapyServices extends HTMLElement {
       <div class="card-cta">Learn More →</div>
       </div>
 
-      <div class="service-card" onclick="navigate('/womens-health-physiotherapy')">
+      <div class="service-card" data-url="/womens-health-physiotherapy">
       <svg aria-hidden="true" class="card-icon" fill="none" viewbox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
       <circle cx="17" cy="13" r="7" stroke="currentColor" stroke-width="1.7"></circle>
       <path d="M17 20v8M13 26h8" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path>
@@ -270,7 +270,7 @@ class IhPhysiotherapyServices extends HTMLElement {
       <div class="card-cta">Learn More →</div>
       </div>
 
-      <div class="service-card" onclick="navigate('/chiropractic')">
+      <div class="service-card" data-url="/chiropractic">
       <svg aria-hidden="true" class="card-icon" fill="none" viewbox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
       <path d="M17 5v24" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
       <path d="M13 9h8M12 14h10M13 19h8M14 24h6" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path>
@@ -280,7 +280,7 @@ class IhPhysiotherapyServices extends HTMLElement {
       <div class="card-cta">Learn More →</div>
       </div>
 
-      <div class="service-card" onclick="navigate('/workcover-physiotherapy')">
+      <div class="service-card" data-url="/workcover-physiotherapy">
       <svg aria-hidden="true" class="card-icon" fill="none" viewbox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
       <rect height="16" rx="2" stroke="currentColor" stroke-width="1.7" width="24" x="5" y="13"></rect>
       <path d="M11 13v-3a6 6 0 0 1 12 0v3" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path>
@@ -291,7 +291,7 @@ class IhPhysiotherapyServices extends HTMLElement {
       <div class="card-cta">Learn More →</div>
       </div>
 
-      <div class="service-card" onclick="navigate('/ndis-physiotherapy')">
+      <div class="service-card" data-url="/ndis-physiotherapy">
       <svg aria-hidden="true" class="card-icon" fill="none" viewbox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
       <circle cx="17" cy="10" r="4" stroke="currentColor" stroke-width="1.7"></circle>
       <path d="M9 29c0-5 3.6-8 8-8s8 3 8 8" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path>
@@ -302,7 +302,7 @@ class IhPhysiotherapyServices extends HTMLElement {
       <div class="card-cta">Learn More →</div>
       </div>
 
-      <div class="service-card" onclick="navigate('/cupping-therapy')">
+      <div class="service-card" data-url="/cupping-therapy">
       <svg aria-hidden="true" class="card-icon" fill="none" viewbox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
       <path d="M9 17c0-4.4 3.6-8 8-8s8 3.6 8 8v4H9v-4z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path>
       <path d="M7 21h20" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path>
@@ -313,7 +313,7 @@ class IhPhysiotherapyServices extends HTMLElement {
       <div class="card-cta">Learn More →</div>
       </div>
 
-      <div class="service-card" onclick="navigate('/online-consultations-physiotherapy')">
+      <div class="service-card" data-url="/online-consultations-physiotherapy">
       <svg aria-hidden="true" class="card-icon" fill="none" viewbox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
       <rect height="18" rx="2" stroke="currentColor" stroke-width="1.7" width="28" x="3" y="7"></rect>
       <path d="M11 25h12M17 25v2" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path>
@@ -342,6 +342,59 @@ class IhPhysiotherapyServices extends HTMLElement {
       </div>
       </div>
     `;
+
+    shadow.querySelectorAll('[data-url]:not(.article-card)').forEach(el => {
+      el.style.cursor = 'pointer';
+      el.addEventListener('click', () => {
+        const url = el.dataset.url;
+        if (url) {
+          this.dispatchEvent(new CustomEvent('navigate', {
+            detail: { url },
+            bubbles: true
+          }));
+        }
+      });
+    });
+
+    const track   = shadow.getElementById('carouselTrack');
+      const counter = shadow.getElementById('navCounter');
+      const prevBtn = shadow.getElementById('navPrev');
+      const nextBtn = shadow.getElementById('navNext');
+      const fadeEl  = shadow.getElementById('fadeRight');
+      const TOTAL   = 10;
+    
+      function cardStep() {
+        const card = track.querySelector('.service-card');
+        const gap  = parseFloat(getComputedStyle(track).gap) || 16;
+        return card ? card.offsetWidth + gap : 276;
+      }
+    
+      function currentIndex() {
+        return Math.round(track.scrollLeft / cardStep());
+      }
+    
+      function updateState() {
+        const idx    = currentIndex();
+        const atEnd  = track.scrollLeft + track.clientWidth >= track.scrollWidth - 6;
+        const atStart = track.scrollLeft <= 6;
+    
+        counter.textContent  = `${idx + 1} / ${TOTAL}`;
+        prevBtn.disabled     = atStart;
+        nextBtn.disabled     = atEnd;
+        fadeEl.style.opacity = atEnd ? '0' : '1';
+      }
+    
+      nextBtn.addEventListener('click', () => {
+        track.scrollBy({ left: cardStep(), behavior: 'smooth' });
+      });
+    
+      prevBtn.addEventListener('click', () => {
+        track.scrollBy({ left: -cardStep(), behavior: 'smooth' });
+      });
+    
+      track.addEventListener('scroll', updateState, { passive: true });
+      window.addEventListener('resize', updateState);
+      updateState();
   }
 }
 
