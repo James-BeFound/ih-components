@@ -382,7 +382,7 @@ class IhSportConditionsWeTreat extends HTMLElement {
       </div>
       </div>
 
-      <div class="category-card" data-url="/hip-pain-injury">
+      <div class="category-card" data-url="/ankle-pain-injury">
       <div class="card-header">
       <span aria-hidden="true" class="card-icon"><svg fill="none" viewbox="0 0 28 28"><path d="M9 6c0 6 2 9 5 11s5 3 5 8" stroke="#fff" stroke-linecap="round" stroke-width="1.7"></path><path d="M7 22h14" stroke="#fff" stroke-linecap="round" stroke-width="1.7"></path><path d="M9 14c2 0 4 .5 5 2" stroke="#fff" stroke-linecap="round" stroke-width="1.5"></path></svg></span>
       <span class="card-title">Foot, Ankle &amp; Shin</span>
