@@ -176,7 +176,7 @@ class IhBackFaq extends HTMLElement {
           button:focus { outline: none; }
           button:focus-visible { outline: none; }
           button.read-link { background: none; border: none; padding: 0; cursor: pointer; font-family: inherit; }
-          button.cta-btn { cursor: pointer; }
+          button.cta-btn { cursor: pointer; border: none; outline: none; }
       </style>
 
       <div class="faq-wrap">
