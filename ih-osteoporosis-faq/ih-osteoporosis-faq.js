@@ -29,7 +29,6 @@ class IhOsteoporosisFaq extends HTMLElement {
             flex-direction: column;
             gap: 40px;
           }
-
           /* ── Left column ── */
           .faq-left {
             display: flex;
