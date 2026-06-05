@@ -296,9 +296,11 @@ class IhBackResources extends HTMLElement {
             .articles-grid { grid-template-columns: repeat(3, 1fr); }
           }
 
-          button { outline: none; border: none; }
+          button { outline: none; }
           button:focus { outline: none; }
           button:focus-visible { outline: none; }
+          button.read-link { background: none; border: none; padding: 0; cursor: pointer; font-family: inherit; }
+          button.cta-btn { cursor: pointer; }
       </style>
 
       <div class="resources-wrap">
