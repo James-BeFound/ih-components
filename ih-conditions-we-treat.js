@@ -318,7 +318,7 @@ class IhConditionsWeTreat extends HTMLElement {
       </div>
       <div class="col-right">
       <div class="conditions-grid">
-      <div class="category-card" data-url="/muscular-low-back-pain">
+      <div class="category-card" data-url="/low-back-pain">
       <div class="card-header">
       <span aria-hidden="true" class="card-icon"><svg fill="none" viewbox="0 0 28 28"><path d="M14 3v22" stroke="#fff" stroke-linecap="round" stroke-width="1.7"></path><rect height="5" rx="2" stroke="#fff" stroke-width="1.5" width="10" x="9" y="6"></rect><rect height="5" rx="2" stroke="#fff" stroke-width="1.5" width="10" x="9" y="13"></rect><path d="M9 8.5H6M19 8.5h3M9 15.5H6M19 15.5h3" stroke="#fff" stroke-linecap="round" stroke-width="1.5"></path></svg></span>
       <span class="card-title">Spine &amp; Back</span>
