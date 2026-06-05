@@ -551,52 +551,6 @@ class IhMeetTheTeamSport extends HTMLElement {
       </div>
     `;
 
-    const allCards  = Array.from(shadow.querySelectorAll('.article-card'));
-    const pageBtns  = shadow.querySelectorAll('.page-btn[data-page]');
-    const prevBtn   = shadow.getElementById('prevBtn');
-    const nextBtn   = shadow.getElementById('nextBtn');
-    const pageInfo  = shadow.getElementById('pageInfo');
-
-    const perPage    = 3;
-    const totalPages = Math.ceil(allCards.length / perPage);
-    let currentPage  = 1;
-
-    const showPage = (page) => {
-      currentPage = page;
-      allCards.forEach((card, i) => {
-        card.style.display = Math.floor(i / perPage) + 1 === page ? '' : 'none';
-      });
-      pageBtns.forEach(btn => {
-        btn.classList.toggle('active', parseInt(btn.dataset.page) === page);
-      });
-      prevBtn.disabled = page === 1;
-      nextBtn.disabled = page === totalPages;
-      const from = (page - 1) * perPage + 1;
-      const to   = Math.min(page * perPage, allCards.length);
-      pageInfo.textContent = `Showing ${from} to ${to} of ${allCards.length} articles`;
-    };
-
-    allCards.forEach(card => {
-      card.addEventListener('click', () => {
-        const url = card.dataset.url;
-        if (url) {
-          this.dispatchEvent(new CustomEvent('navigate', {
-            detail: { url },
-            bubbles: true
-          }));
-        }
-      });
-    });
-
-    pageBtns.forEach(btn => {
-      btn.addEventListener('click', () => showPage(parseInt(btn.dataset.page)));
-    });
-
-    prevBtn.addEventListener('click', () => { if (currentPage > 1) showPage(currentPage - 1); });
-    nextBtn.addEventListener('click', () => { if (currentPage < totalPages) showPage(currentPage + 1); });
-
-    showPage(1);
-
     shadow.querySelectorAll('[data-url]:not(.article-card)').forEach(el => {
       el.style.cursor = 'pointer';
       el.addEventListener('click', () => {
@@ -609,6 +563,105 @@ class IhMeetTheTeamSport extends HTMLElement {
         }
       });
     });
+
+    var outer        = shadow.getElementById('carouselOuter');
+      var track        = shadow.getElementById('carouselTrack');
+      var dotsEl       = shadow.getElementById('dotsRow');
+      var allCards     = Array.from(track.querySelectorAll('.team-card'));
+      var totalSlides  = 3;
+      var currentSlide = 0;
+      var isAnimating  = false;
+    
+      var isMobile = function() { return window.matchMedia('(max-width: 768px)').matches; };
+    
+      
+      function goToSlide(index, animate) {
+        currentSlide = ((index % totalSlides) + totalSlides) % totalSlides;
+        track.style.transition = animate
+          ? 'transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
+          : 'none';
+        track.style.transform = 'translateX(-' + (currentSlide * outer.offsetWidth) + 'px)';
+      }
+    
+      shadow.getElementById('prevBtn').addEventListener('click', function() {
+        if (isMobile() || isAnimating) return;
+        isAnimating = true;
+        goToSlide(currentSlide - 1, true);
+        setTimeout(function() { isAnimating = false; }, 570);
+      });
+    
+      shadow.getElementById('nextBtn').addEventListener('click', function() {
+        if (isMobile() || isAnimating) return;
+        isAnimating = true;
+        goToSlide(currentSlide + 1, true);
+        setTimeout(function() { isAnimating = false; }, 570);
+      });
+    
+      window.addEventListener('resize', function() {
+        if (!isMobile()) goToSlide(currentSlide, false);
+      });
+    
+      
+      function initCarousel() {
+        requestAnimationFrame(function() {
+          if (!isMobile()) goToSlide(0, false);
+        });
+      }
+    
+      if (document.readyState === 'complete') {
+        initCarousel();
+      } else {
+        window.addEventListener('load', initCarousel);
+      }
+    
+      
+      allCards.forEach(function(_, i) {
+        var btn = document.createElement('button');
+        btn.className = 'dot' + (i === 0 ? ' active' : '');
+        btn.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+        btn.addEventListener('click', function() {
+          var cardW = allCards[0].offsetWidth + 14;
+          track.scrollTo({ left: i * cardW, behavior: 'smooth' });
+        });
+        dotsEl.appendChild(btn);
+      });
+    
+      var dots = Array.from(dotsEl.querySelectorAll('.dot'));
+    
+      function setActiveDot(i) {
+        dots.forEach(function(d, idx) { d.classList.toggle('active', idx === i); });
+      }
+    
+      var scrollTimer;
+      track.addEventListener('scroll', function() {
+        clearTimeout(scrollTimer);
+        scrollTimer = setTimeout(function() {
+          var cardW = allCards[0].offsetWidth + 14;
+          setActiveDot(Math.round(track.scrollLeft / cardW));
+        }, 60);
+      }, { passive: true });
+    
+      
+      track.addEventListener('click', function(e) {
+        var card = e.target.closest('.team-card');
+        if (!card) return;
+        if (e.target.closest('.learn-more-btn')) return;
+    
+        if (isMobile()) {
+          var isOpen = card.classList.contains('bio-open');
+          allCards.forEach(function(c) { c.classList.remove('bio-open'); });
+          if (!isOpen) card.classList.add('bio-open');
+        } else {
+          var href = card.dataset.href;
+          if (href) window.open(href, '_blank', 'noopener');
+        }
+      });
+    
+      document.addEventListener('click', function(e) {
+        if (!e.target.closest('.team-card')) {
+          allCards.forEach(function(c) { c.classList.remove('bio-open'); });
+        }
+      });
   }
 }
 
