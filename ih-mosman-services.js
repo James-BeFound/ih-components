@@ -88,6 +88,13 @@ class IhMosmanServices extends HTMLElement {
 
           td.service-name { color: #2d2d2d; font-weight: 500; }
 
+          td.service-name a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s;
+          }
+          td.service-name a:hover { color: #ff6218; }
+
           td.service-status { text-align: center; width: 160px; }
 
           .tick-icon {
@@ -146,21 +153,23 @@ class IhMosmanServices extends HTMLElement {
       </div>
     `;
 
+    const PHYSIO = 'https://www.infinitehealthgroup.com.au/physiotherapy';
+
     const CATEGORIES = [
         {
           label: 'Physiotherapy Services',
           headerColor: '#ff6218',
           services: [
-            { name: 'Physiotherapy'                   },
-            { name: 'Sports Physiotherapy'             },
-            { name: 'Orthopaedic Rehabilitation'       },
-            { name: 'Exercise Rehabilitation'          },
-            { name: 'Dry Needling'                     },
-            { name: 'Corporate Occupational Services'  },
-            { name: 'WorkCover NSW'                    },
-            { name: 'CTP Claims'                       },
-            { name: 'NDIS'                             },
-            { name: 'Telehealth / Online Physio'       },
+            { name: 'Physiotherapy',                  url: PHYSIO                                                                         },
+            { name: 'Sports Physiotherapy',            url: 'https://www.infinitehealthgroup.com.au/sport-physiotherapist'                 },
+            { name: 'Orthopaedic Rehabilitation',      url: PHYSIO                                                                         },
+            { name: 'Exercise Rehabilitation',         url: 'https://www.infinitehealthgroup.com.au/exercise-physiology'                  },
+            { name: 'Dry Needling',                    url: 'https://www.infinitehealthgroup.com.au/dry-needling'                         },
+            { name: 'Corporate Occupational Services', url: PHYSIO                                                                         },
+            { name: 'WorkCover NSW',                   url: 'https://www.infinitehealthgroup.com.au/workcover-physiotherapy'               },
+            { name: 'CTP Claims'                                                                                                           },
+            { name: 'NDIS',                            url: 'https://www.infinitehealthgroup.com.au/ndis-physiotherapy'                   },
+            { name: 'Telehealth / Online Physio',      url: 'https://www.infinitehealthgroup.com.au/online-consultations-physiotherapy'   },
           ],
         },
       ];
@@ -198,8 +207,11 @@ class IhMosmanServices extends HTMLElement {
         cat.services.forEach((svc, i) => {
           const tr = document.createElement('tr');
           if (i >= VISIBLE) tr.classList.add('extra-row');
+          const nameCell = svc.url
+            ? `<a href="${svc.url}" target="_blank" rel="noopener noreferrer">${svc.name}</a>`
+            : svc.name;
           tr.innerHTML = `
-            <td class="service-name">${svc.name}</td>
+            <td class="service-name">${nameCell}</td>
             <td class="service-status">
               <span class="tick-icon">
                 <svg viewBox="0 0 11 11" fill="none">
