@@ -88,6 +88,13 @@ class IhStLeonardsServices extends HTMLElement {
 
           td.service-name { color: #2d2d2d; font-weight: 500; }
 
+          td.service-name a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s;
+          }
+          td.service-name a:hover { color: #ff6218; }
+
           td.service-status { text-align: center; width: 160px; }
 
           .tick-icon {
@@ -151,13 +158,13 @@ class IhStLeonardsServices extends HTMLElement {
           label: 'Physiotherapy Services',
           headerColor: '#ff6218',
           services: [
-            { name: 'Physiotherapy'          },
-            { name: 'Sports Physiotherapy'   },
-            { name: 'Dry Needling'           },
-            { name: 'Shockwave Therapy'      },
-            { name: 'WorkCover NSW'          },
-            { name: 'NDIS'                   },
-            { name: 'Telehealth'             },
+            { name: 'Physiotherapy',        url: 'https://www.infinitehealthgroup.com.au/physiotherapy'                       },
+            { name: 'Sports Physiotherapy', url: 'https://www.infinitehealthgroup.com.au/sport-physiotherapist'               },
+            { name: 'Dry Needling',         url: 'https://www.infinitehealthgroup.com.au/dry-needling'                       },
+            { name: 'Shockwave Therapy',    url: 'https://www.infinitehealthgroup.com.au/shockwave-therapy'                   },
+            { name: 'WorkCover NSW',        url: 'https://www.infinitehealthgroup.com.au/workcover-physiotherapy'             },
+            { name: 'NDIS',                 url: 'https://www.infinitehealthgroup.com.au/ndis-physiotherapy'                 },
+            { name: 'Telehealth',           url: 'https://www.infinitehealthgroup.com.au/online-consultations-physiotherapy' },
           ],
         },
       ];
@@ -195,8 +202,11 @@ class IhStLeonardsServices extends HTMLElement {
         cat.services.forEach((svc, i) => {
           const tr = document.createElement('tr');
           if (i >= VISIBLE) tr.classList.add('extra-row');
+          const nameCell = svc.url
+            ? `<a href="${svc.url}" target="_blank" rel="noopener noreferrer">${svc.name}</a>`
+            : svc.name;
           tr.innerHTML = `
-            <td class="service-name">${svc.name}</td>
+            <td class="service-name">${nameCell}</td>
             <td class="service-status">
               <span class="tick-icon">
                 <svg viewBox="0 0 11 11" fill="none">
