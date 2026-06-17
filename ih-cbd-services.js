@@ -88,6 +88,13 @@ class IhCbdServices extends HTMLElement {
 
           td.service-name { color: #2d2d2d; font-weight: 500; }
 
+          td.service-name a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s;
+          }
+          td.service-name a:hover { color: #ff6218; }
+
           td.service-status { text-align: center; width: 160px; }
 
           .tick-icon {
@@ -151,23 +158,23 @@ class IhCbdServices extends HTMLElement {
         {
           label: 'Physiotherapy Services',
           services: [
-            { name: 'Physiotherapy'                 },
-            { name: 'Sports Physiotherapy'          },
-            { name: 'Dry Needling'                  },
-            { name: 'Sports Massage'                },
-            { name: 'Exercise Rehabilitation'       },
-            { name: 'Orthopaedic Rehabilitation'    },
-            { name: "Women's Health Physiotherapy"  },
-            { name: 'WorkCover NSW'                 },
-            { name: 'CTP Claims'                    },
-            { name: 'NDIS'                          },
-            { name: 'Telehealth / Online Physio'    },
+            { name: 'Physiotherapy',                url: 'https://www.infinitehealthgroup.com.au/physiotherapy'                         },
+            { name: 'Sports Physiotherapy',         url: 'https://www.infinitehealthgroup.com.au/sport-physiotherapist'                 },
+            { name: 'Dry Needling',                 url: 'https://www.infinitehealthgroup.com.au/dry-needling'                         },
+            { name: 'Sports Massage'                                                                                                    },
+            { name: 'Exercise Rehabilitation'                                                                                           },
+            { name: 'Orthopaedic Rehabilitation'                                                                                        },
+            { name: "Women's Health Physiotherapy", url: 'https://www.infinitehealthgroup.com.au/womens-health-physiotherapy'           },
+            { name: 'WorkCover NSW',                url: 'https://www.infinitehealthgroup.com.au/workcover-physiotherapy'               },
+            { name: 'CTP Claims'                                                                                                        },
+            { name: 'NDIS',                         url: 'https://www.infinitehealthgroup.com.au/ndis-physiotherapy'                   },
+            { name: 'Telehealth / Online Physio',   url: 'https://www.infinitehealthgroup.com.au/online-consultations-physiotherapy'   },
           ],
         },
         {
           label: 'Chiropractic Services',
           services: [
-            
+
           ],
         },
       ];
@@ -208,8 +215,11 @@ class IhCbdServices extends HTMLElement {
         cat.services.forEach((svc, i) => {
           const tr = document.createElement('tr');
           if (i >= VISIBLE) tr.classList.add('extra-row');
+          const nameCell = svc.url
+            ? `<a href="${svc.url}" target="_blank" rel="noopener noreferrer">${svc.name}</a>`
+            : svc.name;
           tr.innerHTML = `
-            <td class="service-name">${svc.name}</td>
+            <td class="service-name">${nameCell}</td>
             <td class="service-status">
               <span class="tick-icon">
                 <svg viewBox="0 0 11 11" fill="none">
