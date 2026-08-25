@@ -430,26 +430,6 @@ class IhMeetTheTeamSport extends HTMLElement {
       </div>
       </div>
 
-      <div class="team-card" data-href="https://www.infinitehealthgroup.com.au/kaiser-leung">
-      <img alt="Kaiser Leung" loading="lazy" src="https://static.wixstatic.com/media/607962_42a8b8b0da7a4572a644e208b6bc5872~mv2.png/v1/crop/x_210,y_201,w_1400,h_1992/fill/w_390,h_555,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/20250722_103317_edited_edited_edited_edited.png"/>
-      <div class="card-info">
-      <p class="card-name">Kaiser Leung</p>
-      <p class="card-role">Physiotherapist</p>
-      </div>
-      <div class="card-bio">
-      <p class="bio-text">"I am empathetic by nature and love to help my patients become pain free, return to doing what they love, and to take control of their physical health."</p>
-      <p class="bio-detail-label">Clinical Focus</p>
-      <ul class="bio-list">
-      <li>Neck and shoulder pain</li>
-      <li>Lower back pain and sciatica</li>
-      <li>Weight lifting injuries</li>
-      <li>Sports related knee, shoulder and ankle injuries</li>
-      <li>Bone health and concussions</li>
-      </ul>
-      <div class="learn-more-btn" data-url="https://www.infinitehealthgroup.com.au/kaiser-leung" rel="noopener" target="_blank">Book with Kaiser →</div>
-      </div>
-      </div>
-
       <div class="team-card" data-href="https://www.infinitehealthgroup.com.au/mckenzie-k">
       <img alt="McKenzie K" loading="lazy" src="https://static.wixstatic.com/media/607962_abba940c69c34537ade97ddc0f103ba1~mv2.jpg/v1/fill/w_480,h_640,al_c,q_90,enc_auto/photo.jpg"/>
       <div class="card-info">
@@ -466,32 +446,6 @@ class IhMeetTheTeamSport extends HTMLElement {
       <li>Chronic pain</li>
       </ul>
       <div class="learn-more-btn" data-url="https://www.infinitehealthgroup.com.au/mckenzie-k" rel="noopener" target="_blank">Book with McKenzie →</div>
-      </div>
-      </div>
-      </div>
-
-      <div class="slide">
-
-      <div class="team-card" data-href="https://www.infinitehealthgroup.com.au/jack-mcfadden">
-      <img alt="Jack McFadden" loading="lazy" src="https://static.wixstatic.com/media/607962_c64eb5720f364fd2ac6d4b537ffd9ce9~mv2.jpg/v1/fill/w_480,h_640,al_c,q_90,enc_auto/photo.jpg"/>
-      <div class="card-info">
-      <p class="card-name">Jack McFadden</p>
-      <p class="card-role">Physiotherapist</p>
-      </div>
-      <div class="card-bio">
-      <p class="bio-text">"My treatment style includes manual therapy techniques such as soft tissue release and joint mobilisation, with targeted rehab exercises to reduce pain, restore function and build long-term resilience."</p>
-      <p class="bio-detail-label">Clinical Focus</p>
-      <ul class="bio-list">
-      <li>Running-related and overuse injuries</li>
-      <li>Lower, upper back and neck pain</li>
-      <li>Sports-related pain and injuries</li>
-      </ul>
-      <p class="bio-detail-label">Sports Background</p>
-      <ul class="bio-list">
-      <li>Elite-level track and field</li>
-      <li>Weight training, rugby and basketball</li>
-      </ul>
-      <div class="learn-more-btn" data-url="https://www.infinitehealthgroup.com.au/jack-mcfadden" rel="noopener" target="_blank">Book with Jack →</div>
       </div>
       </div>
 
@@ -513,28 +467,77 @@ class IhMeetTheTeamSport extends HTMLElement {
       <div class="learn-more-btn" data-url="https://www.infinitehealthgroup.com.au/beth-mclean" rel="noopener" target="_blank">Book with Beth →</div>
       </div>
       </div>
+      </div>
 
-      <div class="team-card" data-href="https://www.infinitehealthgroup.com.au/atticus-gordon">
-      <img alt="Atticus Gordon" loading="lazy" src="https://static.wixstatic.com/media/607962_a0e1508363854b578360e7187f75117d~mv2.jpg/v1/fill/w_463,h_701,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/607962_a0e1508363854b578360e7187f75117d~mv2.jpg"/>
+      <div class="slide">
+
+      <div class="team-card" data-href="https://www.infinitehealthgroup.com.au/nicholas-fusca">
+      <img alt="Nicholas Fusca" loading="lazy" src="https://static.wixstatic.com/media/607962_dd096048a5ff47e8bb86fb24d0025db1~mv2.jpg/v1/fill/w_480,h_640,al_c,q_90,enc_auto/photo.jpg"/>
       <div class="card-info">
-      <p class="card-name">Atticus Gordon</p>
-      <p class="card-role">Physiotherapist</p>
+      <p class="card-name">Nicholas Fusca</p>
+      <p class="card-role">Associate Physiotherapist</p>
       </div>
       <div class="card-bio">
-      <p class="bio-text">"My treatment style involves hands-on treatment and exercises with a movement-focused approach, offering support that helps patients move freely and return to what they enjoy."</p>
+      <p class="bio-text">"My passion is helping people overcome pain, optimise their movement, and build lasting strength so they can return to the activities they love for good."</p>
       <p class="bio-detail-label">Clinical Focus</p>
       <ul class="bio-list">
       <li>Shoulder injuries</li>
-      <li>Weightlifting related injuries</li>
-      <li>Lower, upper back and neck pain</li>
-      <li>Sports-related pain and injuries</li>
+      <li>Weightlifting and running related injuries</li>
+      <li>Lower back, upper back and neck pain</li>
+      <li>Sports-related injuries</li>
       </ul>
       <p class="bio-detail-label">Sports Background</p>
       <ul class="bio-list">
-      <li>Rugby league and union</li>
-      <li>Weight training and snowboarding</li>
+      <li>Weight training, boxing and rugby</li>
       </ul>
-      <div class="learn-more-btn" data-url="https://www.infinitehealthgroup.com.au/atticus-gordon" rel="noopener" target="_blank">Book with Atticus →</div>
+      <div class="learn-more-btn" data-url="https://www.infinitehealthgroup.com.au/nicholas-fusca" rel="noopener" target="_blank">Book with Nicholas →</div>
+      </div>
+      </div>
+
+      <div class="team-card" data-href="https://www.infinitehealthgroup.com.au/milan-cucak">
+      <img alt="Milan Cucak" loading="lazy" src="https://static.wixstatic.com/media/607962_3e2ee5cc055141aa8ffca77df6d8ad16~mv2.jpg/v1/fill/w_480,h_640,al_c,q_90,enc_auto/photo.jpg"/>
+      <div class="card-info">
+      <p class="card-name">Milan Cucak</p>
+      <p class="card-role">Associate Physiotherapist</p>
+      </div>
+      <div class="card-bio">
+      <p class="bio-text">"From injury to performance, I will help you move better, recover stronger, and get back to what you love."</p>
+      <p class="bio-detail-label">Clinical Focus</p>
+      <ul class="bio-list">
+      <li>Managing everyday muscle or joint pain</li>
+      <li>Lower back, upper back and neck pain</li>
+      <li>Sports or gym related pain and injuries</li>
+      <li>Post-operative rehabilitation</li>
+      </ul>
+      <p class="bio-detail-label">Sports Background</p>
+      <ul class="bio-list">
+      <li>Soccer, basketball, weight training and combat sports</li>
+      </ul>
+      <div class="learn-more-btn" data-url="https://www.infinitehealthgroup.com.au/milan-cucak" rel="noopener" target="_blank">Book with Milan →</div>
+      </div>
+      </div>
+
+      <div class="team-card" data-href="https://www.infinitehealthgroup.com.au/maddie-nolan">
+      <img alt="Maddie Nolan" loading="lazy" src="https://static.wixstatic.com/media/607962_fd191b77b86341049e7c654cdcd944a1~mv2.jpg/v1/fill/w_480,h_640,al_c,q_90,enc_auto/photo.jpg"/>
+      <div class="card-info">
+      <p class="card-name">Maddie Nolan</p>
+      <p class="card-role">Associate Physiotherapist</p>
+      </div>
+      <div class="card-bio">
+      <p class="bio-text">"Movement is medicine, and I'm passionate about helping people use it to recover, perform and thrive."</p>
+      <p class="bio-detail-label">Clinical Focus</p>
+      <ul class="bio-list">
+      <li>General muscle and joint pain</li>
+      <li>Sports related injuries and overuse conditions</li>
+      <li>Lower back, upper back and neck pain</li>
+      <li>Strength and conditioning and Pilates based rehabilitation</li>
+      </ul>
+      <p class="bio-detail-label">Sports Background</p>
+      <ul class="bio-list">
+      <li>Competitive gymnastics, weight training and Pilates</li>
+      <li>Group fitness and gymnastics coaching</li>
+      </ul>
+      <div class="learn-more-btn" data-url="https://www.infinitehealthgroup.com.au/maddie-nolan" rel="noopener" target="_blank">Book with Maddie →</div>
       </div>
       </div>
       </div>
@@ -568,13 +571,13 @@ class IhMeetTheTeamSport extends HTMLElement {
       var track        = shadow.getElementById('carouselTrack');
       var dotsEl       = shadow.getElementById('dotsRow');
       var allCards     = Array.from(track.querySelectorAll('.team-card'));
-      var totalSlides  = 3;
+      var totalSlides  = track.querySelectorAll('.slide').length;
       var currentSlide = 0;
       var isAnimating  = false;
-    
+
       var isMobile = function() { return window.matchMedia('(max-width: 768px)').matches; };
-    
-      
+
+
       function goToSlide(index, animate) {
         currentSlide = ((index % totalSlides) + totalSlides) % totalSlides;
         track.style.transition = animate
@@ -582,39 +585,39 @@ class IhMeetTheTeamSport extends HTMLElement {
           : 'none';
         track.style.transform = 'translateX(-' + (currentSlide * outer.offsetWidth) + 'px)';
       }
-    
+
       shadow.getElementById('prevBtn').addEventListener('click', function() {
         if (isMobile() || isAnimating) return;
         isAnimating = true;
         goToSlide(currentSlide - 1, true);
         setTimeout(function() { isAnimating = false; }, 570);
       });
-    
+
       shadow.getElementById('nextBtn').addEventListener('click', function() {
         if (isMobile() || isAnimating) return;
         isAnimating = true;
         goToSlide(currentSlide + 1, true);
         setTimeout(function() { isAnimating = false; }, 570);
       });
-    
+
       window.addEventListener('resize', function() {
         if (!isMobile()) goToSlide(currentSlide, false);
       });
-    
-      
+
+
       function initCarousel() {
         requestAnimationFrame(function() {
           if (!isMobile()) goToSlide(0, false);
         });
       }
-    
+
       if (document.readyState === 'complete') {
         initCarousel();
       } else {
         window.addEventListener('load', initCarousel);
       }
-    
-      
+
+
       allCards.forEach(function(_, i) {
         var btn = document.createElement('button');
         btn.className = 'dot' + (i === 0 ? ' active' : '');
@@ -625,13 +628,13 @@ class IhMeetTheTeamSport extends HTMLElement {
         });
         dotsEl.appendChild(btn);
       });
-    
+
       var dots = Array.from(dotsEl.querySelectorAll('.dot'));
-    
+
       function setActiveDot(i) {
         dots.forEach(function(d, idx) { d.classList.toggle('active', idx === i); });
       }
-    
+
       var scrollTimer;
       track.addEventListener('scroll', function() {
         clearTimeout(scrollTimer);
@@ -640,13 +643,13 @@ class IhMeetTheTeamSport extends HTMLElement {
           setActiveDot(Math.round(track.scrollLeft / cardW));
         }, 60);
       }, { passive: true });
-    
-      
+
+
       track.addEventListener('click', function(e) {
         var card = e.target.closest('.team-card');
         if (!card) return;
         if (e.target.closest('.learn-more-btn')) return;
-    
+
         if (isMobile()) {
           var isOpen = card.classList.contains('bio-open');
           allCards.forEach(function(c) { c.classList.remove('bio-open'); });
@@ -656,7 +659,7 @@ class IhMeetTheTeamSport extends HTMLElement {
           if (href) window.open(href, '_blank', 'noopener');
         }
       });
-    
+
       document.addEventListener('click', function(e) {
         if (!e.target.closest('.team-card')) {
           allCards.forEach(function(c) { c.classList.remove('bio-open'); });
