@@ -278,14 +278,6 @@ class IhMeetTheTeam extends HTMLElement {
       <p class="card-location">Chatswood &amp; North Sydney</p>
       </div>
       </div>
-      <div class="team-card" data-url="https://www.infinitehealthgroup.com.au/kaiser-leung" target="_blank">
-      <img alt="Kaiser Leung" loading="lazy" src="https://static.wixstatic.com/media/607962_65e90f25d2044abbb48debd86197df09~mv2.jpg/v1/fill/w_480,h_640,al_c,q_90,enc_auto/photo.jpg"/>
-      <div class="card-overlay">
-      <p class="card-name">Kaiser Leung</p>
-      <p class="card-role">Associate Physiotherapist</p>
-      <p class="card-location">Chatswood &amp; Hornsby</p>
-      </div>
-      </div>
       <div class="team-card" data-url="https://www.infinitehealthgroup.com.au/won-choi" target="_blank">
       <img alt="Won Choi" loading="lazy" src="https://static.wixstatic.com/media/607962_b24c6b315d334eae96fbf7249fa25bec~mv2.jpg/v1/fill/w_480,h_640,al_c,q_90,enc_auto/photo.jpg"/>
       <div class="card-overlay">
@@ -300,14 +292,6 @@ class IhMeetTheTeam extends HTMLElement {
       <p class="card-name">Brian Chan</p>
       <p class="card-role">Associate Physiotherapist</p>
       <p class="card-location">Chatswood</p>
-      </div>
-      </div>
-      <div class="team-card" data-url="https://www.infinitehealthgroup.com.au/jack-mcfadden" target="_blank">
-      <img alt="Jack McFadden" loading="lazy" src="https://static.wixstatic.com/media/607962_c64eb5720f364fd2ac6d4b537ffd9ce9~mv2.jpg/v1/fill/w_480,h_640,al_c,q_90,enc_auto/photo.jpg"/>
-      <div class="card-overlay">
-      <p class="card-name">Jack McFadden</p>
-      <p class="card-role">Associate Physiotherapist</p>
-      <p class="card-location">Mosman &amp; Lane Cove</p>
       </div>
       </div>
       <div class="team-card" data-url="https://www.infinitehealthgroup.com.au/tate-ip" target="_blank">
@@ -332,6 +316,30 @@ class IhMeetTheTeam extends HTMLElement {
       <p class="card-name">McKenzie K</p>
       <p class="card-role">Associate Physiotherapist</p>
       <p class="card-location">Chatswood</p>
+      </div>
+      </div>
+      <div class="team-card" data-url="https://www.infinitehealthgroup.com.au/nicholas-fusca" target="_blank">
+      <img alt="Nicholas Fusca" loading="lazy" src="https://static.wixstatic.com/media/607962_dd096048a5ff47e8bb86fb24d0025db1~mv2.jpg/v1/fill/w_480,h_640,al_c,q_90,enc_auto/photo.jpg"/>
+      <div class="card-overlay">
+      <p class="card-name">Nicholas Fusca</p>
+      <p class="card-role">Associate Physiotherapist</p>
+      <p class="card-location">Hornsby, St Leonards &amp; Lane Cove</p>
+      </div>
+      </div>
+      <div class="team-card" data-url="https://www.infinitehealthgroup.com.au/milan-cucak" target="_blank">
+      <img alt="Milan Cucak" loading="lazy" src="https://static.wixstatic.com/media/607962_3e2ee5cc055141aa8ffca77df6d8ad16~mv2.jpg/v1/fill/w_480,h_640,al_c,q_90,enc_auto/photo.jpg"/>
+      <div class="card-overlay">
+      <p class="card-name">Milan Cucak</p>
+      <p class="card-role">Associate Physiotherapist</p>
+      <p class="card-location">Hornsby, St Leonards &amp; Lane Cove</p>
+      </div>
+      </div>
+      <div class="team-card" data-url="https://www.infinitehealthgroup.com.au/maddie-nolan" target="_blank">
+      <img alt="Maddie Nolan" loading="lazy" src="https://static.wixstatic.com/media/607962_fd191b77b86341049e7c654cdcd944a1~mv2.jpg/v1/fill/w_480,h_640,al_c,q_90,enc_auto/photo.jpg"/>
+      <div class="card-overlay">
+      <p class="card-name">Maddie Nolan</p>
+      <p class="card-role">Associate Physiotherapist</p>
+      <p class="card-location">Mosman, St Leonards &amp; Lane Cove</p>
       </div>
       </div>
       </div>
