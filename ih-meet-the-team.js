@@ -355,53 +355,43 @@ class IhMeetTheTeam extends HTMLElement {
       </div>
     `;
 
-    const allCards  = Array.from(shadow.querySelectorAll('.article-card'));
-    const pageBtns  = shadow.querySelectorAll('.page-btn[data-page]');
-    const prevBtn   = shadow.getElementById('prevBtn');
-    const nextBtn   = shadow.getElementById('nextBtn');
-    const pageInfo  = shadow.getElementById('pageInfo');
+    /* ---- CAROUSEL SCROLLING ----
+       The track is a native overflow-x scroller, so the arrows just nudge
+       scrollLeft by one card. Wraps around at either end so it behaves like
+       the "infinite" carousel the fade edges assume. */
+    const track   = shadow.getElementById('carouselTrack');
+    const prevBtn = shadow.getElementById('prevBtn');
+    const nextBtn = shadow.getElementById('nextBtn');
 
-    const perPage    = 3;
-    const totalPages = Math.ceil(allCards.length / perPage);
-    let currentPage  = 1;
-
-    const showPage = (page) => {
-      currentPage = page;
-      allCards.forEach((card, i) => {
-        card.style.display = Math.floor(i / perPage) + 1 === page ? '' : 'none';
-      });
-      pageBtns.forEach(btn => {
-        btn.classList.toggle('active', parseInt(btn.dataset.page) === page);
-      });
-      prevBtn.disabled = page === 1;
-      nextBtn.disabled = page === totalPages;
-      const from = (page - 1) * perPage + 1;
-      const to   = Math.min(page * perPage, allCards.length);
-      pageInfo.textContent = `Showing ${from} to ${to} of ${allCards.length} articles`;
+    const stepSize = () => {
+      const card = track.querySelector('.team-card');
+      if (!card) return track.clientWidth;
+      const styles = getComputedStyle(track);
+      const gap = parseFloat(styles.columnGap || styles.gap) || 0;
+      return card.getBoundingClientRect().width + gap;
     };
 
-    allCards.forEach(card => {
-      card.addEventListener('click', () => {
-        const url = card.dataset.url;
-        if (url) {
-          this.dispatchEvent(new CustomEvent('navigate', {
-            detail: { url },
-            bubbles: true
-          }));
-        }
-      });
+    // 2px tolerance — fractional card widths mean scrollLeft rarely lands exactly on the edge
+    const atStart = () => track.scrollLeft <= 2;
+    const atEnd   = () => track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
+
+    prevBtn.addEventListener('click', () => {
+      if (atStart()) {
+        track.scrollTo({ left: track.scrollWidth, behavior: 'smooth' });
+      } else {
+        track.scrollBy({ left: -stepSize(), behavior: 'smooth' });
+      }
     });
 
-    pageBtns.forEach(btn => {
-      btn.addEventListener('click', () => showPage(parseInt(btn.dataset.page)));
+    nextBtn.addEventListener('click', () => {
+      if (atEnd()) {
+        track.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        track.scrollBy({ left: stepSize(), behavior: 'smooth' });
+      }
     });
 
-    prevBtn.addEventListener('click', () => { if (currentPage > 1) showPage(currentPage - 1); });
-    nextBtn.addEventListener('click', () => { if (currentPage < totalPages) showPage(currentPage + 1); });
-
-    showPage(1);
-
-    shadow.querySelectorAll('[data-url]:not(.article-card)').forEach(el => {
+    shadow.querySelectorAll('[data-url]').forEach(el => {
       el.style.cursor = 'pointer';
       el.addEventListener('click', () => {
         const url = el.dataset.url;
