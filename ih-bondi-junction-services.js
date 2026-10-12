@@ -164,7 +164,6 @@ class IhBondiJunctionServices extends HTMLElement {
             { name: 'Sports Massage',               url: 'https://www.infinitehealthgroup.com.au/sports-massage-sydney'                },
             { name: 'Exercise Rehabilitation',      url: 'https://www.infinitehealthgroup.com.au/exercise-physiology'                  },
             { name: 'Orthopaedic Rehabilitation',   url: 'https://www.infinitehealthgroup.com.au/physiotherapy'                        },
-            { name: "Women's Health Physiotherapy", url: 'https://www.infinitehealthgroup.com.au/womens-health-physiotherapy'           },
             { name: 'WorkCover NSW',                url: 'https://www.infinitehealthgroup.com.au/workcover-physiotherapy'               },
             { name: 'CTP Claims'                                                                                                        },
             { name: 'NDIS',                         url: 'https://www.infinitehealthgroup.com.au/ndis-physiotherapy'                   },
