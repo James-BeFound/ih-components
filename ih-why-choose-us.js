@@ -146,7 +146,7 @@ class IhWhyChooseUs extends HTMLElement {
       <circle cx="13" cy="9" fill="#fff" r="2.5"></circle>
       </svg>
       </div>
-      <h3>7 Convenient Locations</h3>
+      <h3>8 Convenient Locations</h3>
       <p>Clinics across the North Shore, CBD, and surrounding suburbs. Always one near home, work, or school.</p>
       </div>
 
