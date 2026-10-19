@@ -361,7 +361,7 @@ class IhBondiJunctionClinicDetails extends HTMLElement {
 
     shadow.querySelector('.cta-btn').addEventListener('click', () => {
       this.dispatchEvent(new CustomEvent('navigate', {
-        detail: { url: 'https://app.halth.com/booking/org_2wfUwagaVRVTSC9Ax7BQav3hbSZ' },
+        detail: { url: 'https://app.halth.com/booking/org_2wfUwagaVRVTSC9Ax7BQav3hbSZ?location=3763' },
         bubbles: true
       }));
     });
